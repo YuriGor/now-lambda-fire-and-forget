@@ -1,7 +1,7 @@
 const delegate = require('../lib/delegate');
 module.exports = async (req, res) => {
-  // let host = req.headers['x-now-deployment-url'];
-  let host = 'now-lambda-fire-and-forget.yurigor.now.sh';
+  let host = req.headers['x-now-deployment-url'];
+  //let host = 'now-lambda-fire-and-forget.yurigor.now.sh';
   console.log('lambda1: started', host);
   await delegate(
     host,
