@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <head>
+    <title>zeit/now lambda fire-and-forget example</title>
+    <link rel="stylesheet" href="/www/style.css">
+  </head>
+  <body>
+    <h1>Hello, this is example of  zeit/now cloud app where one labda calls another in "background"</h1>
+    <p><a href="http://yurigor.com/how-to-make-http-request-from-node-js-without-waiting-for-response/" target="_blank">This blog post</a> describes the problem in details.</p>
+    <br />
+    <p>
+    <a href="/api/lambda1.js">Visit api/lambda1.js </a> to make it delegate some job to api/lambda2.js
+    </p>
+    <h3>To see what's going on open zeit logs if ypu deployed this project, or terminal console if you are running via <code>now dev</code><h3>
+  </body>
+</html>
